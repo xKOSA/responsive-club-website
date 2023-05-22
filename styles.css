@@ -1,0 +1,158 @@
+html {
+    font-size: 24px;
+}
+
+body {
+    background-color: #001918;
+    color: #E4FCF7;
+    text-align: center;
+    margin: 0;
+    font-family: 'Abril Fatface', cursive;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+h3, h4, h5, p {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #001918;
+    text-decoration: none;
+    padding: 1em;
+}
+
+main {
+    background-color: #fff;
+    color: #001918;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 5em;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(228, 252, 247, 0.1), rgba(0, 25, 24, 0.9)), url("./images/hero.jpg");
+    background-size: cover;
+    height: 40rem;
+    font-size: 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(228, 252, 247, 0.6);
+
+    color: #001918;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 5em;
+}
+
+.socials {
+    margin-right: 15px;
+}
+
+.socials i {
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+
+.active {
+    background-color: #001918;
+    color: #E4FCF7;
+}
+
+#adventures {
+    padding: 2rem 2rem 0 2rem;
+}
+
+#adventures h2 {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.adventures-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    background-color: #001918;
+    color: #E4FCF7;
+    background-image: linear-gradient(to bottom, rgba(0, 25, 24, 0.9), rgba(0, 25, 24, 0.9)), url("./images/adventure.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.adventure {
+    background-color: rgba(228, 252, 247, 0.5);
+    color: #001918;
+    font-size: 1rem;
+    opacity: 0.9;
+    padding: 1em;
+}
+
+.adventure img {
+    width: 90%;
+    height: auto;
+    padding: 1em;
+}
+
+.testimonial {
+    padding: 50px;
+}
+
+.contact {
+    position: relative;
+    bottom: 3rem;
+}
+
+.copyright {
+    font-size: 0.5rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        min-width: 21rem;
+    }
+
+    .socials {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 658px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .socials {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 658px) and (max-width: 1440px) {
+    .hero-section {
+        font-size: 2.5rem;
+    }
+}
